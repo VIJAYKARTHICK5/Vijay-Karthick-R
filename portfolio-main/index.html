@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Vijay Karthick R, FullStack Developer">
+    <meta name="keywords" content="FullStack Developer, Web Developer, Portfolio, JavaScript, React, Node.js">
+    <meta name="author" content="Vijay Karthick R">
+    <title>Vijay Karthick R | Biomedical Engineer | Fullstack Developer</title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!-- Loading Animation -->
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+    </div>
+
+    <div class="nav-background">
+      <nav id="desktop-nav">
+        <div class="logo">Vijay Karthick R</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      <nav id="hamburger-nav">
+        <div class="logo">VIJAY KARTHICK</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <ul>
+              <li><a href="#about" onclick="toggleMenu()">About</a></li>
+              <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+              <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+              <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profilepic2.png" alt="Vijay Karthick profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Vijay Karthick R</h1>
+        <p class="section__text__p2">Biomedical Engineer | Fullstack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/vijay-karthick-r-223733267/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/VIJAYKARTHICK5'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ Years<br />Fullstack Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.E Biomedical Engineering<br />
+              Bannari Amman Institute of Technology<br />
+              CGPA: 7.37</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Biomedical Engineering graduate with hands-on experience in medical device design, PCB development, and biosignal-
+                based systems. Hospital-trained in biomedical equipment operation and maintenance, with working knowledge of MAT-
+                LAB for signal processing and analysis. Combines hardware design (Arduino, KiCad) with front-end visualization (React)
+                to build complete patient-monitoring solutions. Strong interest in medical device engineering, biomedical instrumentation,
+                and healthcare technology.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills & Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          
+          <div class="details-container">
+            <h2 class="experience-sub-title">Biomedical Engineering</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Biomedical Instrumentation,</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Signal Processing</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PCB Design</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node.js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+
+  <div class="experience-details-container">
+    <div class="project-grid">
+      
+      <!-- Project 1 -->
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/dashboard.png" alt="To-Do List App" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Web-based digital twin dashboard system for hospital operations</h2>
+        <p>
+         A web application focusing on visualization of patient flow, resource utilization, bed occupancy tracking, and operational 
+metrics. The project was implemented using modern MERN stack technologies along with relevant development tools and methodologies. 
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://hospital-digital-twin-dashboard.vercel.app'">Github</button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://hospital-digital-twin-dashboard.vercel.app'">Live Demo</button>
+        </div>
+      </div>
+
+
+      <!-- Project 2-->
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/spiro.jpg" alt="AI Based Spirometer" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">AI Based Spirometer</h2>
+        <p>
+          Machine learning app that analyzes respiratory patterns using TensorFlow. React frontend visualizes real-time lung health predictions.
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/vijay-05012004/ai-spirometer'">Github</button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/VIJAYKARTHICK5'">Live Demo</button>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/expense.png" alt="Expense Tracker" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Expense Tracker</h2>
+        <p>
+          React-based Expense Tracker to manage daily/monthly spending. Gained hands-on experience with useState and useEffect hooks.
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/VIJAYKARTHICK5/expense-tracker'">Github</button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://vijaykarthick5.github.io/expense-tracker/'">Live Demo</button>
+        </div>
+      </div>
+
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/parkinsonSpoon.png" alt="To-Do List App" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Self Stabilizing Parkinson's Spoon</h2>
+        <p>
+          A project aimed at assisting individuals with Parkinson's disease by providing a self-stabilizing spoon that minimizes tremors during eating.
+          This project showcases my ability to integrate hardware and software solutions to address real-world challenges.
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/VIJAYKARTHICK5/Parkinson-s-Spoon'">Github</button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/VIJAYKARTHICK5'">Live Demo</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+</section>
+
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:vijayakarthickraju@gmail.com">vijayakarthickraju@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/vijay-karthick-r-223733267/" target="_blank" rel="noopener">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="GitHub icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://github.com/vijay-05012004" target="_blank" rel="noopener">GitHub</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; <span id="year"></span> Vijay Karthick R. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Go to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
